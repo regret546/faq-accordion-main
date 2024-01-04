@@ -65,4 +65,73 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+:root {
+  /* Font Family*/
+  --ff--primary: "Work Sans", sans-serif;
+  /*   Font Size */
+  --fs--regular: 16px;
+  /* Font Weight */
+  --fw--bold: 400;
+  --fw--very-bold: 600;
+  --fw--solid-bold: 700;
+}
+
+:root {
+  --clr--white: hsl(0, 0%, 100%);
+  --clr--light-pink: hsl(275, 100%, 97%);
+  --clr--grayish-purple: hsl(292, 16%, 49%);
+  --clr--dark-purple: hsl(292, 42%, 14%);
+}
+
+body {
+  background-color: var(--clr--light-pink);
+  font-size: var(--fs--regular);
+  font-family: var(--ff--primary);
+  height: -moz-max-content;
+  height: max-content;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  background-color: var(--clr--white);
+  max-width: 700px;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.card__header h1 {
+  display: flex;
+  align-items: center;
+  font-size: 4rem;
+  font-weight: var(--fw--solid-bold);
+  color: var(--clr--dark-purple);
+}
+.card__header h1 img {
+  margin-right: 1.5rem;
+}
+.card__q1 h2, .card__q2 h2, .card__q3 h2, .card__q4 h2 {
+  display: flex;
+  align-items: center;
+  font-weight: var(--fw--very-bold);
+  font-size: 1.2rem;
+  justify-content: space-between;
+}
+.card__q1 h2 img, .card__q2 h2 img, .card__q3 h2 img, .card__q4 h2 img {
+  margin-left: 1rem;
+}
+.card p {
+  font-weight: var(--fw--bold);
+  color: var(--clr--grayish-purple);
+}
+
+.container {
+  background: url("/assets/images/background-pattern-desktop.svg") no-repeat;
+  background-position: top center;
+  background-size: contain;
+  min-height: inherit;
+  display: grid;
+  place-items: center;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,8 @@
+.container {
+  background: url("/assets/images/background-pattern-desktop.svg") no-repeat;
+  background-position: top center;
+  background-size: contain;
+  min-height: inherit;
+  display: grid;
+  place-items: center;
+}

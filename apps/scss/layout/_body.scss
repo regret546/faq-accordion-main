@@ -1,0 +1,9 @@
+body {
+  background-color: var(--clr--light-pink);
+  font-size: var(--fs--regular);
+  font-family: var(--ff--primary);
+  height: max-content;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,41 @@
+@use "../layout/util/" as u;
+
+.card {
+  background-color: var(--clr--white);
+  max-width: 700px;
+  border-radius: 1rem;
+  padding: 2rem;
+
+  &__header {
+    h1 {
+      @include u.flex-align-center;
+      font-size: 4rem;
+      font-weight: var(--fw--solid-bold);
+      color: var(--clr--dark-purple);
+      img {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+
+  &__q1,
+  &__q2,
+  &__q3,
+  &__q4 {
+    h2 {
+      @include u.flex-align-center;
+      font-weight: var(--fw--very-bold);
+      font-size: 1.2rem;
+      justify-content: space-between;
+
+      img {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  p {
+    font-weight: var(--fw--bold);
+    color: var(--clr--grayish-purple);
+  }
+}
