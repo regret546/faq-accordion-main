@@ -18,23 +18,32 @@
     }
   }
 
-  &__q1,
-  &__q2,
-  &__q3,
-  &__q4 {
+  .cards {
+    margin-bottom: 1rem;
     h2 {
       @include u.flex-align-center;
       font-weight: var(--fw--very-bold);
       font-size: 1.2rem;
       justify-content: space-between;
-
+      margin-bottom: 1.5rem;
       img {
+        cursor: pointer;
         margin-left: 1rem;
       }
+    }
+
+    .hidden {
+      transition: opacity 1s ease-out;
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
     }
   }
 
   p {
+    display: block;
+    opacity: 1;
+    height: auto;
     font-weight: var(--fw--bold);
     color: var(--clr--grayish-purple);
   }
