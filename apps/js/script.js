@@ -8,8 +8,10 @@ function dropDown(card) {
     const paragpraph = card.querySelector("p");
     if (paragpraph.classList.contains("hidden")) {
       paragpraph.classList.remove("hidden");
+      paragpraph.classList.add("show");
       img.src = "assets/images/icon-minus.svg";
     } else {
+      paragpraph.classList.remove("show");
       paragpraph.classList.add("hidden");
       img.src = "assets/images/icon-plus.svg";
     }
