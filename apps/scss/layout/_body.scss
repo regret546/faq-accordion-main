@@ -6,4 +6,12 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+
+  .attribution {
+    text-align: center;
+    font-size: 0.7rem;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
 }

@@ -96,19 +96,30 @@ body {
   display: flex;
   flex-direction: column;
 }
+body .attribution {
+  text-align: center;
+  font-size: 0.7rem;
+}
+body .attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
+/* Breakpoints */
 .card {
   background-color: var(--clr--white);
   max-width: 700px;
   border-radius: 1rem;
   padding: 2rem;
+  margin: 1rem;
 }
 @keyframes show {
   0% {
-    height: 0;
+    transform: translateY(-100%);
+    opacity: 0;
   }
   100% {
-    height: 100px;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 .card__header h1 {
@@ -154,6 +165,36 @@ body {
   height: auto;
   font-weight: var(--fw--bold);
   color: var(--clr--grayish-purple);
+  margin-bottom: 1rem;
+}
+.card footer {
+  font-size: 11px;
+  text-align: center;
+}
+.card footer a {
+  color: hsl(228, 45%, 44%);
+}
+@media only screen and (max-width: 43.75em) {
+  .card {
+    margin: 1.5rem;
+  }
+  .card__header h1 {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .card__header h1 img {
+    width: 25px;
+    height: 25px;
+    margin-right: 1rem;
+  }
+  .card .cards h2 {
+    font-size: 1rem;
+  }
+  .card .cards p {
+    font-size: 0.9rem;
+  }
 }
 
 .container {
@@ -163,4 +204,14 @@ body {
   min-height: inherit;
   display: grid;
   place-items: center;
+}
+@media only screen and (max-width: 43.75em) {
+  .container {
+    background: url("/assets/images/background-pattern-mobile.svg") no-repeat;
+    background-position: top center;
+    background-size: contain;
+    min-height: inherit;
+    display: grid;
+    place-items: center;
+  }
 }/*# sourceMappingURL=style.css.map */
