@@ -167,13 +167,6 @@ body .attribution a {
   color: var(--clr--grayish-purple);
   margin-bottom: 1rem;
 }
-.card footer {
-  font-size: 11px;
-  text-align: center;
-}
-.card footer a {
-  color: hsl(228, 45%, 44%);
-}
 @media only screen and (max-width: 43.75em) {
   .card {
     margin: 1.5rem;
